@@ -1,7 +1,7 @@
 <template>
     <div class="merc_banner">
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 py-5">
                 <div class="col my-3" v-for="({src, text}, index) in mercandise" :key="index">
                     <a href="#" class="d-flex align-items-center">
                         <img :src="require(`@/assets${src}`)" :alt="'merce' + text">
@@ -81,18 +81,21 @@ export default {
 @import '@/assets/scss/variables';
 .merc_banner {
     background-color: $primaryColor;  
-    
+    z-index: 1;
     img {
             width: auto;
             max-height: 55px;
+            z-index: 1;
         }
 
     a {
         color: $bannerTextColor; 
         text-decoration: none;
+        z-index: 1;
 
        span {
            font-size: 0.8rem;
+           z-index: 1;
        }
     }
 }

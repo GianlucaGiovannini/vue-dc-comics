@@ -1,7 +1,7 @@
 <template>
     <footer>
-        <div class="footer_top py-5">
-            <div class="container position-relative">
+        <div class="footer_top py-5 position-relative">
+            <div class="container">
                 <div class="row row-cols-2">
                     <div class="col">
                         <div class="row row-cols-3">
@@ -97,15 +97,27 @@
                                 </ul>
                             </div>
                         </div>
-                        
-                    </div>
-                    <img class="img_footer_logo" src="@/assets/img/dc-logo-bg.png">
+                    </div>                  
                 </div>
             </div>
+            <img class="img_footer_logo" src="@/assets/img/dc-logo-bg.png">
         </div>
         
         <div class="footer_bottom">
-            <div class="container">
+            <div class="container py-5">
+                <div class="row row-cols-2 justify-content-around">
+                    <div class="col">
+                        <button class="text-uppercase">Sign-up now!</button>
+                    </div>
+                    <div class="col d-flex gap-3 justify-content-end align-items-center">
+                        <div class="text-uppercase">Follow us</div>
+                        <img src="@/assets/img/footer-facebook.png">
+                        <img src="@/assets/img/footer-twitter.png">
+                        <img src="@/assets/img/footer-youtube.png">
+                        <img src="@/assets/img/footer-pinterest.png">
+                        <img src="@/assets/img/footer-periscope.png">
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -126,12 +138,14 @@ footer {
         background-image: url("@/assets/img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: -1;
 
         .img_footer_logo{
             position: absolute;
-            top: 0;
+            top: 50%;
             right: 0;
-
+            transform: translate(0, -50%);
+            z-index: 0;
         }
 
         ul {
@@ -143,6 +157,18 @@ footer {
     a {
         color: $footerTextLi;
         text-decoration: none;
+    }
+
+    .footer_bottom {
+        background-color: $footerBanner;
+        z-index: 1;
+
+        .container{
+            z-index: 1;
+        }
+        .row {
+            z-index: 1;
+        }
     }
 }
 
