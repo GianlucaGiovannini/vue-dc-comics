@@ -1,11 +1,11 @@
 <template>
     <header>
-        <nav class="container p-4">
-            <div class="row align-items-center gy-3">
-                <div class="col-12 col-lg-1">
+        <nav class="container py-4">
+            <div class="row align-items-center gy-4">
+                <div class="col-12 col-lg-1 col-xl-2">
                     <img src="@/assets/img/dc-logo.png" alt="logo DC Comics">
                 </div>
-                <div class="col-12 col-lg-11 text-end">
+                <div class="col-12 col-lg-11 col-xl-10 d-flex justify-content-end flex-wrap">
                     <a href="#" v-for="(content, index) in navContent" :key="index" class="text-uppercase">
                         {{ content.categoria }}
                     </a>
@@ -76,10 +76,15 @@ a {
     font-size: 0.85rem;
     font-weight: 600;
     color: $navTextColor;
-    padding: 0.75rem 0.75rem 2rem;
+    padding: 0.75rem 0.75rem 1rem;
     text-decoration: none;
 
+    &.active {
+        color: $primaryColor;
+    }
 
+    &:hover {
+        color: $primaryColor;
+    }
 }
-
 </style>
