@@ -1,0 +1,19 @@
+main {
+    background-color: $mainBgColor;
+    .current_series {
+        font-size: 1.4rem;
+        background-color: $primaryColor;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+    .btn-more {
+        background-color: $primaryColor;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px 0 #673ab7;
+        }
+    }
+}

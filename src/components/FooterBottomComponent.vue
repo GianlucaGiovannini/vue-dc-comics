@@ -35,28 +35,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.footer_bottom {
-        background-color: $footerBanner;
-        z-index: 1;
 
-        .btn_footer{
-            @include button;
-            color: white;
-            &:hover {
-                box-shadow: inset 0 0 20px 0px $primaryColor;
-            }
-        }
-        
-        .follow_us {
-            color: $primaryColor;
-            font-weight: bold;
-            margin-right: 1rem;
-        }
-
-        a {
-            &:hover {
-                transform: scale(1.3);
-            }
-        }
-    }
 </style>

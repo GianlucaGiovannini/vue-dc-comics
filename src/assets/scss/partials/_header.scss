@@ -1,0 +1,18 @@
+nav {
+    a {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: $navTextColor;
+        display: inline-block;
+        padding: 2.8rem 0;
+        border-bottom: 7px solid transparent;
+        text-decoration: none;
+        &.active {
+            color: $primaryColor;
+        }
+        &:hover {
+            color: $primaryColor;
+            border-bottom: 7px solid $primaryColor;
+        }
+    }
+}

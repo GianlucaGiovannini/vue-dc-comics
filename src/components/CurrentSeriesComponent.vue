@@ -20,18 +20,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .series_img {
-        height: 200px;
-        
-        img {
-            max-height: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            object-position: top;
-        }
-    }
 
-    .category {
-        font-size: 0.85rem
-    }
 </style>

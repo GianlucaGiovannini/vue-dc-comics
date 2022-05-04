@@ -1,0 +1,22 @@
+.merc_banner {
+    background-color: $primaryColor;
+    z-index: 1;
+    img {
+        width: auto;
+        max-height: 55px;
+        z-index: 1;
+    }
+    a {
+        color: $bannerTextColor;
+        text-decoration: none;
+        z-index: 1;
+        span {
+            font-size: 0.8rem;
+            z-index: 1;
+        }
+    }
+    .last_img {
+        padding-top: 0.3rem;
+        width: 70px;
+    }
+}
