@@ -35,18 +35,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/variables';
 .footer_bottom {
         background-color: $footerBanner;
         z-index: 1;
 
         .btn_footer{
-            background-color: transparent;
+            @include button;
             color: white;
-            border: 2px solid $primaryColor;
-            padding: 0.7rem;
-            transition: 0.5s;
-
             &:hover {
                 box-shadow: inset 0 0 20px 0px $primaryColor;
             }

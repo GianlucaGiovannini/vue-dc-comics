@@ -1,44 +1,13 @@
 <template>
     <div class="merc_banner">
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 py-5 px-5">
                 <div class="col my-3" v-for="item in merchandise" :key="item.id">
                     <a href="#" class="d-flex align-items-center">
-                        <img :src="item.src" :alt="'merce ' + item.text">
+                        <img :class="merchandise.length === item.id ? 'last_img' : ''" :src="item.src" :alt="'merce ' + item.text">
                         <span class="ms-2 text-uppercase">{{ item.text }}</span>
                     </a>
                 </div>
-                <!-- <div class="col my-3 p-0">
-                    <a href="#" class="d-flex align-items-center">
-                        <img src="@/assets/img/buy-comics-digital-comics.png">
-                        <span class="ms-2 text-uppercase">digital comics</span>
-                    </a>
-                </div>
-                <div class="col my-3 p-0">
-                    <a href="#" class="d-flex align-items-center">
-                        <img src="@/assets/img/buy-comics-merchandise.png">
-                        <span class="ms-2 text-uppercase">Dc Merchandise</span>
-                    </a>
-                </div>
-                <div class="col my-3 p-0">
-                    <a href="#" class="d-flex align-items-center">
-                        <img src="@/assets/img/buy-comics-subscriptions.png">
-                        <span class="ms-2 text-uppercase">subscription</span>
-                    </a>
-                </div>
-                <div class="col my-3 p-0">
-                    <a href="#" class="d-flex align-items-center">
-                        <img src="@/assets/img/buy-comics-shop-locator.png">
-                        <span class="ms-2 text-uppercase">comic shop locator</span>
-                    </a>
-                </div>
-                <div class="col my-3 p-0">
-                    <a href="#" class="d-flex align-items-center">
-                        <img src="@/assets/img/buy-dc-power-visa.svg">
-                        <span class="ms-2 text-uppercase">dc power visa</span>
-                    </a>
-                </div> -->
-
             </div>
         </div>
     </div>
@@ -82,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/variables';
+
 .merc_banner {
     background-color: $primaryColor;  
     z-index: 1;
@@ -101,6 +70,11 @@ export default {
            font-size: 0.8rem;
            z-index: 1;
        }
+    }
+
+    .last_img {
+        padding-top: 0.3rem;
+        width: 70px;
     }
 }
 </style>

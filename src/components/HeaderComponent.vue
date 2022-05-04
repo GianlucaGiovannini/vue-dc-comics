@@ -1,12 +1,12 @@
 <template>
     <header>
         <nav>
-            <div class="container py-4">
+            <div class="container">
                 <div class="row align-items-center gy-4">
-                    <div class="col-12 col-lg-1 col-xl-2">
+                    <div class="col-12 col-lg-2 col-xl-3 text-center pt-2  text-lg-start p-lg-0">
                         <img src="@/assets/img/dc-logo.png" alt="logo DC Comics">
                     </div>
-                    <div class="col-12 col-lg-11 col-xl-10 d-flex justify-content-end flex-wrap">
+                    <div class="col-12 col-lg-10 col-xl-9 d-flex justify-content-end flex-wrap gap-3">
                         <a :href="item.href" v-for="item in navContent" :key="item.id" :class="item.categoria === 'comics' ? 'active' : ''" class="text-uppercase">
                             {{ item.categoria }}
                         </a>
@@ -82,7 +82,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/variables';
+
 
 nav {
 
@@ -90,7 +90,9 @@ nav {
     font-size: 0.85rem;
     font-weight: 600;
     color: $navTextColor;
-    padding: 0.75rem 0.75rem 1rem;
+    display: inline-block;
+    padding: 2.8rem 0;
+    border-bottom: 7px solid transparent;
     text-decoration: none;
 
         &.active {
@@ -99,6 +101,7 @@ nav {
 
         &:hover {
             color: $primaryColor;
+            border-bottom: 7px solid $primaryColor;
         }
     }
 }
