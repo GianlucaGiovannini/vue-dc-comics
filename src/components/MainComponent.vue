@@ -5,7 +5,7 @@
             <div class="current_series text-uppercase text-white fw-bold px-4 py-2">
                 current series
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-6 px-2 py-3 g-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-6 px-2 py-3 g-4 text-center text-sm-start">
                 <CurrentSeries 
                 :serie="currentSeries[index].series"
                 :thumb="currentSeries[index].thumb"
