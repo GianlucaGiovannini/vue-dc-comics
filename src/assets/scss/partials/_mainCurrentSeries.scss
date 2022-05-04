@@ -1,13 +1,19 @@
-.series_img {
-    height: 200px;
-    img {
-        max-height: 100%;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        object-position: top;
+.row {
+    .col {
+        .series_img {
+            height: 200px;
+            img {
+                max-height: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        .category {
+            font-size: 0.85rem
+        }
+        &:hover {
+            color: $primaryColor
+        }
     }
-}
-
-.category {
-    font-size: 0.85rem
 }
