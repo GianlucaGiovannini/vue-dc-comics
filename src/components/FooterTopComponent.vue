@@ -1,8 +1,8 @@
 <template>
-            <div class="footer_top py-5 position-relative">
+            <div class="footer_top position-relative">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2">
-                    <div class="col footer_list">
+                    <div class="col footer_list py-4">
                         <div class="row row-cols-3">
                             <div class="col">
                                 <div class="dc_comics_list">
@@ -107,9 +107,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col logo_cols"></div>
                 </div>
             </div>
-            <img class="img_footer_logo" src="@/assets/img/dc-logo-bg.png">
         </div>
 </template>
 
@@ -136,17 +136,13 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         
-
-        .img_footer_logo{
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translate(0, -50%);
-            z-index: 0;
+        .logo_cols {
+            background-image: url(@/assets/img/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .footer_list {
-            z-index: 1;
             ul {
             list-style: none;
             padding:0;
@@ -157,7 +153,6 @@ export default {
                     a {
                         color: $footerTextLi;
                         text-decoration: none;
-                        z-index: 1;
 
                         &:hover {
                             color: $primaryColor;

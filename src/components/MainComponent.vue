@@ -2,7 +2,7 @@
     <main>
         <div class="container text-white">
             <div class="row row-cols-1">
-                <div class="cols py-5 fw-bold fs-3">
+                <div class="cols py-5 fs-4">
                     👉 Content goes here 👈
                 </div>
             </div>
