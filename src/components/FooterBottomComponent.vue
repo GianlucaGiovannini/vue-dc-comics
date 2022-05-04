@@ -7,11 +7,21 @@
                     </div>
                     <div class="col d-flex gap-3 justify-content-end align-items-center">
                         <div class="text-uppercase follow_us">Follow us</div>
-                        <img src="@/assets/img/footer-facebook.png">
-                        <img src="@/assets/img/footer-twitter.png">
-                        <img src="@/assets/img/footer-youtube.png">
-                        <img src="@/assets/img/footer-pinterest.png">
-                        <img src="@/assets/img/footer-periscope.png">
+                        <a href="#">
+                            <img src="@/assets/img/footer-facebook.png">
+                        </a>
+                        <a href="#">
+                            <img src="@/assets/img/footer-twitter.png">
+                        </a>                       
+                        <a href="#">
+                            <img src="@/assets/img/footer-youtube.png">
+                        </a>                       
+                        <a href="#">
+                            <img src="@/assets/img/footer-pinterest.png">
+                        </a>           
+                        <a href="#">
+                            <img src="@/assets/img/footer-periscope.png">
+                        </a>     
                     </div>
                 </div>
             </div>
@@ -46,6 +56,12 @@ export default {
             color: $primaryColor;
             font-weight: bold;
             margin-right: 1rem;
+        }
+
+        a {
+            &:hover {
+                transform: scale(1.3);
+            }
         }
     }
 </style>
